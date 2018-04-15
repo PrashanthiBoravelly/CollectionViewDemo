@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImageView {
     
-    func setImage(cache: PersistantCache, imageURL: URL,
+    func setImage(cache: NetworkCache, imageURL: URL,
                   completion: ((Result<Data, CustomError>) -> Void)? = nil) {
         cache.add(url: imageURL, completion: completion)
     }

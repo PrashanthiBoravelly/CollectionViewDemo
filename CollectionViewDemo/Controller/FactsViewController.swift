@@ -14,6 +14,8 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
     
     private var fact: Fact?
     
+    let networkCache = NetworkCache()
+    
     private lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
@@ -58,6 +60,25 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
         let row = fact?.rows?[indexPath.row]
         cell.titleLabel?.text = row?.title
         cell.imageView.image = nil
+        if let imageURL = row?.imageURL {
+            cell.processActivityIndicatorView(isHidden: false)
+            cell.imageView.setImage(cache: networkCache,
+                                    imageURL: imageURL,
+                                    completion: { result in
+                                        DispatchQueue.main.async { [weak self] in
+                                            guard self != nil else { return }
+                                            cell.processActivityIndicatorView(isHidden: true)
+                                            switch result {
+                                            case .success(let data):
+                                                cell.imageView.image = UIImage(data: data)
+                                            case .failure:
+                                                cell.imageView.image = UIImage(named: "noImage.jpeg")
+                                            }
+                                        }
+            })
+        } else {
+            cell.imageView.image = UIImage(named: "noImage.jpeg")
+        }
         return cell
     }
     
