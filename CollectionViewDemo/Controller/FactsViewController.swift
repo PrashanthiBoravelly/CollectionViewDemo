@@ -8,29 +8,29 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
-
 class FactsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    private var fact: Fact?
+    // MARK: - Constants.
     
     let networkImageCache = NetworkCache()
+    
+    // MARK: - Variables.
+    
+    private var fact: Fact?
     
     private lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
         return refreshControl
     }()
-
+    
+    // MARK: - Life cycle.
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView?.register(UINib(nibName: "FactsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "facts")
         collectionView?.addSubview(refreshControl)
         showLoadingView()
-        refreshFacts()
-    }
-    
-    @IBAction func refresh(_ sender: UIRefreshControl) {
         refreshFacts()
     }
     
@@ -50,7 +50,15 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
             }
         }
     }
-   
+    
+    // MARK: - IBAction
+    
+    @IBAction func refresh(_ sender: UIRefreshControl) {
+        refreshFacts()
+    }
+    
+    // MARK: - UICollectionViewDataSource
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return fact?.rows?.count ?? 0
     }
@@ -62,18 +70,24 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
         cell.imageView.image = nil
         if let imageURL = row?.imageURL {
             cell.processActivityIndicatorView(isHidden: false)
+            
+            // fecthing image from server.
             cell.imageView.setImage(cache: networkImageCache,
                                     imageURL: imageURL,
                                     completion: { result in
                                         DispatchQueue.main.async { [weak self] in
                                             guard self != nil else { return }
-                                            cell.processActivityIndicatorView(isHidden: true)
                                             switch result {
                                             case .success(let data):
-                                                cell.imageView.image = UIImage(data: data)
+                                                if let image = UIImage(data: data) {
+                                                    cell.imageView.image = image
+                                                } else {
+                                                    cell.imageView.image = UIImage(named: "noImage.jpeg")
+                                                }
                                             case .failure:
                                                 cell.imageView.image = UIImage(named: "noImage.jpeg")
                                             }
+                                            cell.processActivityIndicatorView(isHidden: true)
                                         }
             })
         } else {
@@ -82,19 +96,26 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
         return cell
     }
     
+    // MARK: - UICollectionViewDelegateFlowLayout
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize  {
+        let elementsCount: CGFloat = UIDevice.current.orientation.isPortrait ? 2 : 3
         var insets: CGFloat = 0.0
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             insets = flowLayout.sectionInset.left + flowLayout.sectionInset.right
         }
-        let size = self.view.frame.size.width / 2 - insets
+        let size = self.view.frame.size.width / elementsCount - insets
         return CGSize(width: size, height: size)
     }
+    
+    // MARK: - UICollectionViewDelegate
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath)
         performSegue(withIdentifier: "detail", sender: cell)
     }
+    
+    // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewController = segue.destination as? DetailViewController,
@@ -105,5 +126,5 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
             viewController.image = cell.imageView.image
         }
     }
-   
+    
 }
