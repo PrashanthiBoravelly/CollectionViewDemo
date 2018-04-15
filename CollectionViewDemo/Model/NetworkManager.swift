@@ -73,4 +73,6 @@ class NetworkManager {
                             completion(.failure(error))
                         }
         })
+    }
+    
 }

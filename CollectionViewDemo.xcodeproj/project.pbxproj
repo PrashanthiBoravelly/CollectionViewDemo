@@ -21,6 +21,7 @@
 		F48825022083184E0027F1E0 /* FactsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48825002083184E0027F1E0 /* FactsCollectionViewCell.swift */; };
 		F48825032083184E0027F1E0 /* FactsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48825012083184E0027F1E0 /* FactsCollectionViewCell.xib */; };
 		F488250520831BD70027F1E0 /* UIViewController+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488250420831BD70027F1E0 /* UIViewController+Error.swift */; };
+		F488250720831C500027F1E0 /* PersistantCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488250620831C500027F1E0 /* PersistantCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F48825002083184E0027F1E0 /* FactsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsCollectionViewCell.swift; sourceTree = "<group>"; };
 		F48825012083184E0027F1E0 /* FactsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactsCollectionViewCell.xib; sourceTree = "<group>"; };
 		F488250420831BD70027F1E0 /* UIViewController+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Error.swift"; sourceTree = "<group>"; };
+		F488250620831C500027F1E0 /* PersistantCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistantCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				F48824F8208315330027F1E0 /* CustomError.swift */,
 				F48824FA208317570027F1E0 /* Fact.swift */,
 				F48824FC208317A10027F1E0 /* FactsManager.swift */,
+				F488250620831C500027F1E0 /* PersistantCache.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				F48824F7208314DE0027F1E0 /* NetworkManager.swift in Sources */,
 				F48824D920830FCB0027F1E0 /* AppDelegate.swift in Sources */,
 				F48824FB208317570027F1E0 /* Fact.swift in Sources */,
+				F488250720831C500027F1E0 /* PersistantCache.swift in Sources */,
 				F48824F5208314510027F1E0 /* UIViewController+Loading.swift in Sources */,
 				F48824F9208315330027F1E0 /* CustomError.swift in Sources */,
 			);
