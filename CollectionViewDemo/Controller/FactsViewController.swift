@@ -104,7 +104,7 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             insets = flowLayout.sectionInset.left + flowLayout.sectionInset.right
         }
-        let size = self.view.frame.size.width / elementsCount - insets
+        let size = UIScreen.main.bounds.width / elementsCount - insets
         return CGSize(width: size, height: size)
     }
     
@@ -125,6 +125,14 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
             viewController.factRow = fact?.rows?[indexPath.item]
             viewController.image = cell.imageView.image
         }
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        guard let flowLayout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout else {
+            return
+        }
+        flowLayout.invalidateLayout()
     }
     
 }
