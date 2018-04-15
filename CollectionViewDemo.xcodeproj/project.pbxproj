@@ -15,6 +15,7 @@
 		F48824F3208313550027F1E0 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48824F2208313550027F1E0 /* NavigationController.swift */; };
 		F48824F5208314510027F1E0 /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48824F4208314510027F1E0 /* UIViewController+Loading.swift */; };
 		F48824F7208314DE0027F1E0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48824F6208314DE0027F1E0 /* NetworkManager.swift */; };
+		F48824F9208315330027F1E0 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48824F8208315330027F1E0 /* CustomError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F48824F2208313550027F1E0 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		F48824F4208314510027F1E0 /* UIViewController+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loading.swift"; sourceTree = "<group>"; };
 		F48824F6208314DE0027F1E0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F48824F8208315330027F1E0 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				F48824F6208314DE0027F1E0 /* NetworkManager.swift */,
+				F48824F8208315330027F1E0 /* CustomError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				F48824F7208314DE0027F1E0 /* NetworkManager.swift in Sources */,
 				F48824D920830FCB0027F1E0 /* AppDelegate.swift in Sources */,
 				F48824F5208314510027F1E0 /* UIViewController+Loading.swift in Sources */,
+				F48824F9208315330027F1E0 /* CustomError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
