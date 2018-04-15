@@ -27,6 +27,13 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         title = factRow?.title
         descriptionLabel.text = factRow?.description
+        let size: CGFloat
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            size = 25.0
+        } else {
+            size = 15.0
+        }
+        descriptionLabel.font = UIFont(name: "AvenirNext-Regular", size: size)
         imageView.image = image
         widthConstraint?.constant = image?.size.width ?? 100.0
     }
