@@ -10,7 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class FactsViewController: UICollectionViewController {
+class FactsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     private var fact: Fact?
     
@@ -59,6 +59,16 @@ class FactsViewController: UICollectionViewController {
         cell.titleLabel?.text = row?.title
         cell.imageView.image = nil
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize  {
+        var insets: CGFloat = 0.0
+        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            insets = flowLayout.sectionInset.left + flowLayout.sectionInset.right
+        }
+        let size = self.view.frame.size.width / 2 - insets
+        return CGSize(width: size, height: size)
+        
     }
    
 }
