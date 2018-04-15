@@ -22,6 +22,8 @@ class NetworkManager {
             
             // Sending request to fetch data.
             URLSession.shared.dataTask(with: request) {(data, response, error) in
+                
+                // Checking for errors.
                 if let error = error {
                     if (error as NSError).domain == NSURLErrorDomain,
                         (error as NSError).code == NSURLErrorNotConnectedToInternet

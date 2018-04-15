@@ -18,6 +18,7 @@ class NavigationController: UINavigationController {
                                              NSAttributedStringKey.font: UIFont(name: "AvenirNext-Bold", size: 20.0)!]
     }
     
+    // Creating empty backButtonItem in every viewcontroller before pushing VC.
     func createEmptyBackBarButtonItem() {
         topViewController?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }

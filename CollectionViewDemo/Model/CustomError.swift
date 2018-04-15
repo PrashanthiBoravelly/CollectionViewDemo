@@ -47,4 +47,6 @@ enum CustomError: Error, CustomDebugStringConvertible {
         default:
             return "There are system issues. Please try after some time."
         }
+    }
+    
 }

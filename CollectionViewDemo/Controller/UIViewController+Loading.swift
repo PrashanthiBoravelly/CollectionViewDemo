@@ -10,6 +10,7 @@ import UIKit
 
 extension UIViewController {
     
+    // Displaying loading indicator on navigationbar.
     func showLoadingView() {
         let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         activityIndicatorView.startAnimating()
