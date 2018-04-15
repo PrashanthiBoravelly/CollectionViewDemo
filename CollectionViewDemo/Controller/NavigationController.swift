@@ -10,6 +10,8 @@ import UIKit
 
 class NavigationController: UINavigationController {
     
+    // MARK: - Life cycle.
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.tintColor = .black

@@ -16,8 +16,10 @@ class FactsCollectionViewCell: UICollectionViewCell {
     
     func processActivityIndicatorView(isHidden: Bool) {
         if isHidden {
+            activityIndicatorView.isHidden = true
             activityIndicatorView.stopAnimating()
         } else {
+            activityIndicatorView.isHidden = false
             activityIndicatorView.startAnimating()
         }
     }
