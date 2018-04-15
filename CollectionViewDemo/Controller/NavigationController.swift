@@ -18,4 +18,18 @@ class NavigationController: UINavigationController {
                                              NSAttributedStringKey.font: UIFont(name: "AvenirNext-Bold", size: 20.0)!]
     }
     
+    func createEmptyBackBarButtonItem() {
+        topViewController?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    override func show(_ vc: UIViewController, sender: Any?) {
+        createEmptyBackBarButtonItem()
+        super.show(vc, sender: sender)
+    }
+    
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        createEmptyBackBarButtonItem()
+        super.pushViewController(viewController, animated: animated)
+    }
+    
 }
