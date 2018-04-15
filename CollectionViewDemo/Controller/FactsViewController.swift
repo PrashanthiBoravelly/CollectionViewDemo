@@ -12,6 +12,8 @@ private let reuseIdentifier = "Cell"
 
 class FactsViewController: UICollectionViewController {
     
+    private var fact: Fact?
+    
     private lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
@@ -37,7 +39,7 @@ class FactsViewController: UICollectionViewController {
                 strongSelf.refreshControl.endRefreshing()
                 switch result {
                 case .success(let fact):
-                    print(fact.title)
+                    strongSelf.fact = fact
                     strongSelf.collectionView?.reloadData()
                 case .failure(let error):
                     print(error)
