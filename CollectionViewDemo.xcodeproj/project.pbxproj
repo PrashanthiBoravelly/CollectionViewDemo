@@ -21,7 +21,9 @@
 		F48825022083184E0027F1E0 /* FactsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48825002083184E0027F1E0 /* FactsCollectionViewCell.swift */; };
 		F48825032083184E0027F1E0 /* FactsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48825012083184E0027F1E0 /* FactsCollectionViewCell.xib */; };
 		F488250520831BD70027F1E0 /* UIViewController+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488250420831BD70027F1E0 /* UIViewController+Error.swift */; };
-		F488250720831C500027F1E0 /* PersistantCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488250620831C500027F1E0 /* PersistantCache.swift */; };
+		F488250720831C500027F1E0 /* NetworkCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488250620831C500027F1E0 /* NetworkCache.swift */; };
+		F488250920831F0B0027F1E0 /* UIImageView+imageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488250820831F0B0027F1E0 /* UIImageView+imageURL.swift */; };
+		F488250C208321200027F1E0 /* noImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F488250B208321200027F1E0 /* noImage.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +43,9 @@
 		F48825002083184E0027F1E0 /* FactsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsCollectionViewCell.swift; sourceTree = "<group>"; };
 		F48825012083184E0027F1E0 /* FactsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactsCollectionViewCell.xib; sourceTree = "<group>"; };
 		F488250420831BD70027F1E0 /* UIViewController+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Error.swift"; sourceTree = "<group>"; };
-		F488250620831C500027F1E0 /* PersistantCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistantCache.swift; sourceTree = "<group>"; };
+		F488250620831C500027F1E0 /* NetworkCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCache.swift; sourceTree = "<group>"; };
+		F488250820831F0B0027F1E0 /* UIImageView+imageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+imageURL.swift"; sourceTree = "<group>"; };
+		F488250B208321200027F1E0 /* noImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noImage.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 				F48824EB208310500027F1E0 /* Controller */,
 				F48824EC208310500027F1E0 /* Model */,
 				F48824ED208310500027F1E0 /* View */,
+				F488250A208321200027F1E0 /* Images */,
 				F48824D820830FCB0027F1E0 /* AppDelegate.swift */,
 				F48824DF20830FCC0027F1E0 /* Assets.xcassets */,
 				F48824E120830FCC0027F1E0 /* LaunchScreen.storyboard */,
@@ -104,7 +109,7 @@
 				F48824F8208315330027F1E0 /* CustomError.swift */,
 				F48824FA208317570027F1E0 /* Fact.swift */,
 				F48824FC208317A10027F1E0 /* FactsManager.swift */,
-				F488250620831C500027F1E0 /* PersistantCache.swift */,
+				F488250620831C500027F1E0 /* NetworkCache.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,8 +119,17 @@
 			children = (
 				F48825002083184E0027F1E0 /* FactsCollectionViewCell.swift */,
 				F48825012083184E0027F1E0 /* FactsCollectionViewCell.xib */,
+				F488250820831F0B0027F1E0 /* UIImageView+imageURL.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F488250A208321200027F1E0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F488250B208321200027F1E0 /* noImage.jpeg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +194,7 @@
 				F48824F1208311DD0027F1E0 /* Facts.storyboard in Resources */,
 				F48824E320830FCC0027F1E0 /* LaunchScreen.storyboard in Resources */,
 				F48824E020830FCC0027F1E0 /* Assets.xcassets in Resources */,
+				F488250C208321200027F1E0 /* noImage.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,9 +211,10 @@
 				F48824FD208317A10027F1E0 /* FactsManager.swift in Sources */,
 				F48824F3208313550027F1E0 /* NavigationController.swift in Sources */,
 				F48824F7208314DE0027F1E0 /* NetworkManager.swift in Sources */,
+				F488250920831F0B0027F1E0 /* UIImageView+imageURL.swift in Sources */,
 				F48824D920830FCB0027F1E0 /* AppDelegate.swift in Sources */,
 				F48824FB208317570027F1E0 /* Fact.swift in Sources */,
-				F488250720831C500027F1E0 /* PersistantCache.swift in Sources */,
+				F488250720831C500027F1E0 /* NetworkCache.swift in Sources */,
 				F48824F5208314510027F1E0 /* UIViewController+Loading.swift in Sources */,
 				F48824F9208315330027F1E0 /* CustomError.swift in Sources */,
 			);
