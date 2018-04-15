@@ -10,16 +10,31 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    // MARK: - Variables.
+    
     var factRow: Fact.Row?
     var image: UIImage?
     
+    // MARK: - IBOutlets.
+    
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private var widthConstraint: NSLayoutConstraint?
+
+    // MARK: - Life cycle.
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = factRow?.title
         descriptionLabel.text = factRow?.description
         imageView.image = image
+        widthConstraint?.constant = image?.size.width ?? 100.0
+    }
+    
+    override public var traitCollection: UITraitCollection {
+        if UIDevice.current.userInterfaceIdiom == .pad && UIDevice.current.orientation.isPortrait {
+            return UITraitCollection(traitsFrom:[UITraitCollection(horizontalSizeClass: .compact), UITraitCollection(verticalSizeClass: .regular)])
+        }
+        return super.traitCollection
     }
 }
