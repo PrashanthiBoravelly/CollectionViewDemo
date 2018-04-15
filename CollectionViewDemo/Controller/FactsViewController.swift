@@ -43,7 +43,7 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
                     strongSelf.fact = fact
                     strongSelf.collectionView?.reloadData()
                 case .failure(let error):
-                    print(error)
+                    strongSelf.showAlert(message: error.userDescription)
                 }
             }
         }

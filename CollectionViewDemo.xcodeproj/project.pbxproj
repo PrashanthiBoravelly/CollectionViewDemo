@@ -20,6 +20,7 @@
 		F48824FD208317A10027F1E0 /* FactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48824FC208317A10027F1E0 /* FactsManager.swift */; };
 		F48825022083184E0027F1E0 /* FactsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48825002083184E0027F1E0 /* FactsCollectionViewCell.swift */; };
 		F48825032083184E0027F1E0 /* FactsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48825012083184E0027F1E0 /* FactsCollectionViewCell.xib */; };
+		F488250520831BD70027F1E0 /* UIViewController+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488250420831BD70027F1E0 /* UIViewController+Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F48824FC208317A10027F1E0 /* FactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsManager.swift; sourceTree = "<group>"; };
 		F48825002083184E0027F1E0 /* FactsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsCollectionViewCell.swift; sourceTree = "<group>"; };
 		F48825012083184E0027F1E0 /* FactsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactsCollectionViewCell.xib; sourceTree = "<group>"; };
+		F488250420831BD70027F1E0 /* UIViewController+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Error.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				F48824F0208311DD0027F1E0 /* Facts.storyboard */,
 				F48824F2208313550027F1E0 /* NavigationController.swift */,
 				F48824F4208314510027F1E0 /* UIViewController+Loading.swift */,
+				F488250420831BD70027F1E0 /* UIViewController+Error.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F48825022083184E0027F1E0 /* FactsCollectionViewCell.swift in Sources */,
+				F488250520831BD70027F1E0 /* UIViewController+Error.swift in Sources */,
 				F48824EF208311D10027F1E0 /* FactsViewController.swift in Sources */,
 				F48824FD208317A10027F1E0 /* FactsManager.swift in Sources */,
 				F48824F3208313550027F1E0 /* NavigationController.swift in Sources */,
