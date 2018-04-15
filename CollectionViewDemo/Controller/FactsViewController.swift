@@ -14,6 +14,7 @@ class FactsViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        showLoadingView()
         refreshFacts()
     }
     
@@ -21,6 +22,7 @@ class FactsViewController: UICollectionViewController {
         FactsManager.fetchFacts { result in
             DispatchQueue.main.async { [weak self] in
                 guard let strongSelf = self else { return }
+                strongSelf.hideLoadingView()
                 switch result {
                 case .success(let fact):
                     print(fact.title)
