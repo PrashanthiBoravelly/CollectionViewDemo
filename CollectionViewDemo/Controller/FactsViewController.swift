@@ -14,8 +14,23 @@ class FactsViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        refreshFacts()
     }
-
+    
+    private func refreshFacts() {
+        FactsManager.fetchFacts { result in
+            DispatchQueue.main.async { [weak self] in
+                guard let strongSelf = self else { return }
+                switch result {
+                case .success(let fact):
+                    print(fact.title)
+                    strongSelf.collectionView?.reloadData()
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
+    }
    
     
    
