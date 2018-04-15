@@ -14,7 +14,7 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
     
     private var fact: Fact?
     
-    let networkCache = NetworkCache()
+    let networkImageCache = NetworkCache()
     
     private lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
@@ -57,12 +57,12 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "facts", for: indexPath) as! FactsCollectionViewCell
-        let row = fact?.rows?[indexPath.row]
+        let row = fact?.rows?[indexPath.item]
         cell.titleLabel?.text = row?.title
         cell.imageView.image = nil
         if let imageURL = row?.imageURL {
             cell.processActivityIndicatorView(isHidden: false)
-            cell.imageView.setImage(cache: networkCache,
+            cell.imageView.setImage(cache: networkImageCache,
                                     imageURL: imageURL,
                                     completion: { result in
                                         DispatchQueue.main.async { [weak self] in
@@ -89,7 +89,21 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
         }
         let size = self.view.frame.size.width / 2 - insets
         return CGSize(width: size, height: size)
-        
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        performSegue(withIdentifier: "detail", sender: cell)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? DetailViewController,
+            let cell = sender as? FactsCollectionViewCell,
+            let indexPath = collectionView?.indexPath(for: cell)
+        {
+            viewController.factRow = fact?.rows?[indexPath.item]
+            viewController.image = cell.imageView.image
+        }
     }
    
 }
