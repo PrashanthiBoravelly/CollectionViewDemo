@@ -105,7 +105,7 @@ class FactTests: XCTestCase {
         XCTAssertTrue(fact?.title == "About Canada")
         XCTAssertTrue(fact?.rows?[0].title == "Beavers")
         XCTAssertTrue(fact?.rows?[0].description == "Beavers are second only to humans in their ability to manipulate and change their environment. They can measure up to 1.3 metres long. A group of beavers is called a colony")
-        XCTAssertTrue(fact?.rows?[0].imageURL?.absoluteString == "http://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/American_Beaver.jpg/220px-American_Beaver.jpg")
+        XCTAssertTrue(fact?.rows?[0].imageURL == "http://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/American_Beaver.jpg/220px-American_Beaver.jpg")
     }
     
 }

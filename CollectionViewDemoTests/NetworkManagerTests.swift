@@ -23,7 +23,7 @@ class NetworkManagerTests: XCTestCase {
         let urlString = "mcokurl"
         var customError: CustomError?
         let expect = XCTestExpectation(description: "callback")
-        NetworkManager.responseData(urlString: urlString) { result in
+        FactsManager.responseData(urlString: urlString) { result in
             expect.fulfill()
             if case .failure(let error) = result {
                 customError = error
@@ -38,7 +38,7 @@ class NetworkManagerTests: XCTestCase {
         var customError: CustomError?
         var responseData: Data?
         let expect = XCTestExpectation(description: "callback")
-        NetworkManager.responseData(urlString: urlString) { result in
+        FactsManager.responseData(urlString: urlString) { result in
             expect.fulfill()
             switch result {
             case .success(let data):
@@ -57,7 +57,7 @@ class NetworkManagerTests: XCTestCase {
         var customError: CustomError?
         var responseFact: Fact?
         let expect = XCTestExpectation(description: "callback")
-        NetworkManager.responseObject(urlString: urlString) { (result: Result<Fact, CustomError>) in
+        FactsManager.responseObject(urlString: urlString) { (result: Result<Fact, CustomError>) in
             expect.fulfill()
             switch result {
             case .success(let fact):
