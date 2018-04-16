@@ -28,6 +28,6 @@ extension DeviceAdopatble {
     }
     
     var collectionViewElementsCount: Int {
-        return (isiPad || isLandScape) ? 3 : 2
+        return isLandScape ? 3 : 2
     }
 }

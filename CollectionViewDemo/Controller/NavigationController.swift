@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NavigationController: UINavigationController {
+class NavigationController: UINavigationController, DeviceAdopatble {
     
     // MARK: - Life cycle.
     
@@ -16,14 +16,8 @@ class NavigationController: UINavigationController {
         super.viewDidLoad()
         navigationBar.tintColor = .black
         navigationBar.barTintColor = .white
-        let size: CGFloat
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            size = 32.0
-        } else {
-            size = 20.0
-        }
         navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.darkGray,
-                                             NSAttributedStringKey.font: UIFont(name: "AvenirNext-Bold", size: size)!]
+                                             NSAttributedStringKey.font: UIFont(name: "AvenirNext-Bold", size: navigationBarTitleFontSize)!]
     }
     
     // Creating empty backButtonItem in every viewcontroller before pushing VC.

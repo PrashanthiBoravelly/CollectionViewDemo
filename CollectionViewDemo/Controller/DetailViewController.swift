@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, DeviceAdopatble {
     
     // MARK: - Variables.
     
@@ -27,13 +27,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         title = factRow?.title
         descriptionLabel.text = factRow?.description
-        let size: CGFloat
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            size = 25.0
-        } else {
-            size = 15.0
-        }
-        descriptionLabel.font = UIFont(name: "AvenirNext-Regular", size: size)
+        descriptionLabel.font = UIFont(name: "AvenirNext-Regular", size: descriptionLabelFontSize)
         imageView.image = image
         widthConstraint?.constant = image?.size.width ?? 100.0
     }

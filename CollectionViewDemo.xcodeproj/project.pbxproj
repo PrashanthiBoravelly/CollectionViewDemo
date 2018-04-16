@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F41C2CD1208421350064054A /* DeviceAdoptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C2CD0208421350064054A /* DeviceAdoptable.swift */; };
-		F41C2CED208473380064054A /* CollectionViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C2CEC208473380064054A /* CollectionViewDemoTests.swift */; };
 		F41C2CF5208474110064054A /* FactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C2CF4208474110064054A /* FactTests.swift */; };
 		F41C2CF7208479540064054A /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C2CF6208479540064054A /* NetworkManagerTests.swift */; };
 		F48824D920830FCB0027F1E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48824D820830FCB0027F1E0 /* AppDelegate.swift */; };
@@ -44,7 +43,6 @@
 /* Begin PBXFileReference section */
 		F41C2CD0208421350064054A /* DeviceAdoptable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAdoptable.swift; sourceTree = "<group>"; };
 		F41C2CEA208473380064054A /* CollectionViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F41C2CEC208473380064054A /* CollectionViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDemoTests.swift; sourceTree = "<group>"; };
 		F41C2CEE208473380064054A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F41C2CF4208474110064054A /* FactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTests.swift; sourceTree = "<group>"; };
 		F41C2CF6208479540064054A /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 		F41C2CEB208473380064054A /* CollectionViewDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				F41C2CEC208473380064054A /* CollectionViewDemoTests.swift */,
 				F41C2CEE208473380064054A /* Info.plist */,
 				F41C2CF4208474110064054A /* FactTests.swift */,
 				F41C2CF6208479540064054A /* NetworkManagerTests.swift */,
@@ -280,7 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F41C2CF7208479540064054A /* NetworkManagerTests.swift in Sources */,
-				F41C2CED208473380064054A /* CollectionViewDemoTests.swift in Sources */,
 				F41C2CF5208474110064054A /* FactTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

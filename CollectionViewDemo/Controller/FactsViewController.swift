@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FactsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class FactsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, DeviceAdopatble {
     
     // MARK: - Constants.
     
@@ -99,11 +99,11 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
     // MARK: - UICollectionViewDelegateFlowLayout
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize  {
-        let elementsCount: CGFloat = UIDevice.current.orientation.isPortrait ? 2 : 3
         var insets: CGFloat = 0.0
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             insets = flowLayout.sectionInset.left + flowLayout.sectionInset.right
         }
+        let elementsCount = CGFloat(collectionViewElementsCount)
         let size = UIScreen.main.bounds.width / elementsCount - insets
         return CGSize(width: size, height: size)
     }
