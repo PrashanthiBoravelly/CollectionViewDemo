@@ -1,0 +1,28 @@
+2018-04-16 16:40:33.466267+1000 CollectionViewDemo[31017:2415198] Simulator user has requested new graphics quality: 10
+2018-04-16 16:40:33.483159+1000 CollectionViewDemo[31017:2415198] [LayoutConstraints] Unable to simultaneously satisfy constraints.
+	Probably at least one of the constraints in the following list is one you don't want. 
+	Try this: 
+		(1) look at each constraint and try to figure out which you don't expect; 
+		(2) find the code that added the unwanted constraint or constraints and fix it. 
+(
+    "<NSLayoutConstraint:0x60400008f9b0 UILabel:0x7fb9a901a850'Facts'.top >= UILayoutGuide:0x6040001aae20'TitleView(0x7fb9a9008230)'.top   (active)>",
+    "<NSLayoutConstraint:0x60400008ab90 UILabel:0x7fb9a901a850'Facts'.firstBaseline == UILayoutGuide:0x6040001aae20'TitleView(0x7fb9a9008230)'.top + 28   (active)>"
+)
+
+Will attempt to recover by breaking constraint 
+<NSLayoutConstraint:0x60400008f9b0 UILabel:0x7fb9a901a850'Facts'.top >= UILayoutGuide:0x6040001aae20'TitleView(0x7fb9a9008230)'.top   (active)>
+
+Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger.
+The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in <UIKit/UIView.h> may also be helpful.
+Test Suite 'Selected tests' started at 2018-04-16 16:40:33.583
+Test Suite 'CollectionViewDemoTests.xctest' started at 2018-04-16 16:40:33.584
+Test Suite 'NetworkManagerTests' started at 2018-04-16 16:40:33.585
+Test Case '-[CollectionViewDemoTests.NetworkManagerTests testInValidURL]' started.
+2018-04-16 16:40:33.587213+1000 CollectionViewDemo[31017:2415290] Task <A6527720-8F87-4D19-B8E2-4874E7FC31B2>.<2> finished with error - code: -1002
+Test Case '-[CollectionViewDemoTests.NetworkManagerTests testInValidURL]' passed (0.023 seconds).
+Test Suite 'NetworkManagerTests' passed at 2018-04-16 16:40:33.609.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.023 (0.024) seconds
+Test Suite 'CollectionViewDemoTests.xctest' passed at 2018-04-16 16:40:33.610.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.023 (0.026) seconds
+Test Suite 'Selected tests' passed at 2018-04-16 16:40:33.610.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.023 (0.027) seconds

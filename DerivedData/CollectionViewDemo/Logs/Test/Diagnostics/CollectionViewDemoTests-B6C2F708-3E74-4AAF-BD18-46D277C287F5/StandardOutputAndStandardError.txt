@@ -1,0 +1,20 @@
+2018-04-16 17:38:26.035019+1000 CollectionViewDemo[34281:2521805] Simulator user has requested new graphics quality: 10
+2018-04-16 17:38:26.065819+1000 CollectionViewDemo[34281:2521805] [LayoutConstraints] Unable to simultaneously satisfy constraints.
+	Probably at least one of the constraints in the following list is one you don't want. 
+	Try this: 
+		(1) look at each constraint and try to figure out which you don't expect; 
+		(2) find the code that added the unwanted constraint or constraints and fix it. 
+(
+    "<NSLayoutConstraint:0x6000000956d0 UILabel:0x7fcece4050f0'Facts'.top >= UILayoutGuide:0x60c0001acbe0'TitleView(0x7fced220d9c0)'.top   (active)>",
+    "<NSLayoutConstraint:0x6000000950e0 UILabel:0x7fcece4050f0'Facts'.firstBaseline == UILayoutGuide:0x60c0001acbe0'TitleView(0x7fced220d9c0)'.top + 28   (active)>"
+)
+
+Will attempt to recover by breaking constraint 
+<NSLayoutConstraint:0x6000000956d0 UILabel:0x7fcece4050f0'Facts'.top >= UILayoutGuide:0x60c0001acbe0'TitleView(0x7fced220d9c0)'.top   (active)>
+
+Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger.
+The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in <UIKit/UIView.h> may also be helpful.
+Test Suite 'Selected tests' started at 2018-04-16 17:38:26.333
+Test Suite 'CollectionViewDemoTests.xctest' started at 2018-04-16 17:38:26.334
+Test Suite 'NetworkManagerMockUnitTests' started at 2018-04-16 17:38:26.334
+Test Case '-[CollectionViewDemoTests.NetworkManagerMockUnitTests testRequestWithURL]' started.

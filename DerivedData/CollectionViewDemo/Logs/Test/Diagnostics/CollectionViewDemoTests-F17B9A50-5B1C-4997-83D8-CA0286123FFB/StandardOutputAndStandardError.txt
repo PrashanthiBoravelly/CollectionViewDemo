@@ -1,0 +1,32 @@
+2018-04-16 17:46:10.993593+1000 CollectionViewDemo[36402:2538622] Simulator user has requested new graphics quality: 10
+2018-04-16 17:46:11.007674+1000 CollectionViewDemo[36402:2538622] [LayoutConstraints] Unable to simultaneously satisfy constraints.
+	Probably at least one of the constraints in the following list is one you don't want. 
+	Try this: 
+		(1) look at each constraint and try to figure out which you don't expect; 
+		(2) find the code that added the unwanted constraint or constraints and fix it. 
+(
+    "<NSLayoutConstraint:0x60000008fb90 UILabel:0x7fc3c2410db0'Facts'.top >= UILayoutGuide:0x60c0001bd420'TitleView(0x7fc3c250e210)'.top   (active)>",
+    "<NSLayoutConstraint:0x60000008dfc0 UILabel:0x7fc3c2410db0'Facts'.firstBaseline == UILayoutGuide:0x60c0001bd420'TitleView(0x7fc3c250e210)'.top + 28   (active)>"
+)
+
+Will attempt to recover by breaking constraint 
+<NSLayoutConstraint:0x60000008fb90 UILabel:0x7fc3c2410db0'Facts'.top >= UILayoutGuide:0x60c0001bd420'TitleView(0x7fc3c250e210)'.top   (active)>
+
+Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger.
+The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in <UIKit/UIView.h> may also be helpful.
+Test Suite 'Selected tests' started at 2018-04-16 17:46:11.093
+Test Suite 'CollectionViewDemoTests.xctest' started at 2018-04-16 17:46:11.094
+Test Suite 'NetworkManagerTests' started at 2018-04-16 17:46:11.094
+Test Case '-[CollectionViewDemoTests.NetworkManagerTests testFetchingAndDecodingFacts]' started.
+Test Case '-[CollectionViewDemoTests.NetworkManagerTests testFetchingAndDecodingFacts]' passed (0.557 seconds).
+Test Case '-[CollectionViewDemoTests.NetworkManagerTests testFetchingFacts]' started.
+Test Case '-[CollectionViewDemoTests.NetworkManagerTests testFetchingFacts]' passed (0.061 seconds).
+Test Case '-[CollectionViewDemoTests.NetworkManagerTests testInValidURL]' started.
+2018-04-16 17:46:11.715501+1000 CollectionViewDemo[36402:2538674] Task <51EBDEDF-CF3F-4821-8FA3-24742C3473E0>.<9> finished with error - code: -1002
+Test Case '-[CollectionViewDemoTests.NetworkManagerTests testInValidURL]' passed (0.019 seconds).
+Test Suite 'NetworkManagerTests' passed at 2018-04-16 17:46:11.734.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.638 (0.640) seconds
+Test Suite 'CollectionViewDemoTests.xctest' passed at 2018-04-16 17:46:11.735.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.638 (0.641) seconds
+Test Suite 'Selected tests' passed at 2018-04-16 17:46:11.735.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.638 (0.642) seconds

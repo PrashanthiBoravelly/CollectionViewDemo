@@ -112,7 +112,11 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath)
-        performSegue(withIdentifier: "detail", sender: cell)
+        if let cell = cell as? FactsCollectionViewCell,
+            cell.imageView.image != nil
+        {
+            performSegue(withIdentifier: "detail", sender: cell)
+        }
     }
     
     // MARK: - Navigation

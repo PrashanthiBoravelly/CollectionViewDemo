@@ -1,0 +1,27 @@
+2018-04-16 16:16:02.173177+1000 CollectionViewDemo[29644:2367406] Simulator user has requested new graphics quality: 10
+2018-04-16 16:16:02.202824+1000 CollectionViewDemo[29644:2367406] [LayoutConstraints] Unable to simultaneously satisfy constraints.
+	Probably at least one of the constraints in the following list is one you don't want. 
+	Try this: 
+		(1) look at each constraint and try to figure out which you don't expect; 
+		(2) find the code that added the unwanted constraint or constraints and fix it. 
+(
+    "<NSLayoutConstraint:0x60400028bfe0 UILabel:0x7fa899c03550'Facts'.top >= UILayoutGuide:0x6000007a6d60'TitleView(0x7fa89ca0eaf0)'.top   (active)>",
+    "<NSLayoutConstraint:0x60400028be50 UILabel:0x7fa899c03550'Facts'.firstBaseline == UILayoutGuide:0x6000007a6d60'TitleView(0x7fa89ca0eaf0)'.top + 28   (active)>"
+)
+
+Will attempt to recover by breaking constraint 
+<NSLayoutConstraint:0x60400028bfe0 UILabel:0x7fa899c03550'Facts'.top >= UILayoutGuide:0x6000007a6d60'TitleView(0x7fa89ca0eaf0)'.top   (active)>
+
+Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger.
+The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in <UIKit/UIView.h> may also be helpful.
+Test Suite 'Selected tests' started at 2018-04-16 16:16:02.384
+Test Suite 'CollectionViewDemoTests.xctest' started at 2018-04-16 16:16:02.385
+Test Suite 'FactTests' started at 2018-04-16 16:16:02.386
+Test Case '-[CollectionViewDemoTests.FactTests testFact]' started.
+Test Case '-[CollectionViewDemoTests.FactTests testFact]' passed (0.019 seconds).
+Test Suite 'FactTests' passed at 2018-04-16 16:16:02.405.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.019 (0.020) seconds
+Test Suite 'CollectionViewDemoTests.xctest' passed at 2018-04-16 16:16:02.406.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.019 (0.021) seconds
+Test Suite 'Selected tests' passed at 2018-04-16 16:16:02.407.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.019 (0.022) seconds

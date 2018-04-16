@@ -1,0 +1,214 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "showLoadingView"]
+- ["So16UIViewControllerC", "hideLoadingView"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "UIActivityIndicatorView"
+- !private "UIBarButtonItem"
+- "UIViewController"
+depends-member:
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "startAnimating"]
+- !private ["s7CVarArgP", "UIActivityIndicatorView"]
+- !private ["s7CVarArgP", "UIBarButtonItem"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "navigationItem"]
+- !private ["s7CVarArgP", "rightBarButtonItem"]
+- !private ["s7CVarArgP", "setRightBarButton"]
+- !private ["s7CVarArgP", "startAnimating"]
+- !private ["s28CustomDebugStringConvertibleP", "UIActivityIndicatorView"]
+- !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
+- !private ["s28CustomDebugStringConvertibleP", "rightBarButtonItem"]
+- !private ["s28CustomDebugStringConvertibleP", "setRightBarButton"]
+- !private ["s28CustomDebugStringConvertibleP", "startAnimating"]
+- !private ["s23CustomStringConvertibleP", "UIActivityIndicatorView"]
+- !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "navigationItem"]
+- !private ["s23CustomStringConvertibleP", "rightBarButtonItem"]
+- !private ["s23CustomStringConvertibleP", "setRightBarButton"]
+- !private ["s23CustomStringConvertibleP", "startAnimating"]
+- !private ["s9EquatableP", "UIActivityIndicatorView"]
+- !private ["s9EquatableP", "UIBarButtonItem"]
+- !private ["s9EquatableP", "gray"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "navigationItem"]
+- !private ["s9EquatableP", "rightBarButtonItem"]
+- !private ["s9EquatableP", "setRightBarButton"]
+- !private ["s9EquatableP", "startAnimating"]
+- !private ["s8HashableP", "UIActivityIndicatorView"]
+- !private ["s8HashableP", "UIBarButtonItem"]
+- !private ["s8HashableP", "gray"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "navigationItem"]
+- !private ["s8HashableP", "rightBarButtonItem"]
+- !private ["s8HashableP", "setRightBarButton"]
+- !private ["s8HashableP", "startAnimating"]
+- !private ["So8NSCodingP", "UIActivityIndicatorView"]
+- !private ["So8NSCodingP", "UIBarButtonItem"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "navigationItem"]
+- !private ["So8NSCodingP", "rightBarButtonItem"]
+- !private ["So8NSCodingP", "setRightBarButton"]
+- !private ["So8NSCodingP", "startAnimating"]
+- !private ["So26NSExtensionRequestHandlingP", "UIActivityIndicatorView"]
+- !private ["So26NSExtensionRequestHandlingP", "UIBarButtonItem"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationItem"]
+- !private ["So8NSObjectC", "UIActivityIndicatorView"]
+- !private ["So8NSObjectC", "UIBarButtonItem"]
+- ["So8NSObjectC", "hideLoadingView"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "navigationItem"]
+- !private ["So8NSObjectC", "rightBarButtonItem"]
+- !private ["So8NSObjectC", "setRightBarButton"]
+- ["So8NSObjectC", "showLoadingView"]
+- !private ["So8NSObjectC", "startAnimating"]
+- !private ["So16NSObjectProtocolP", "UIActivityIndicatorView"]
+- !private ["So16NSObjectProtocolP", "UIBarButtonItem"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "navigationItem"]
+- !private ["So16NSObjectProtocolP", "rightBarButtonItem"]
+- !private ["So16NSObjectProtocolP", "setRightBarButton"]
+- !private ["So16NSObjectProtocolP", "startAnimating"]
+- !private ["s16RawRepresentableP", "gray"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "startAnimating"]
+- !private ["So23UIActivityIndicatorViewC", "init"]
+- !private ["So23UIActivityIndicatorViewC", "startAnimating"]
+- !private ["SC28UIActivityIndicatorViewStyleO", "gray"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "startAnimating"]
+- !private ["So21UIAppearanceContainerP", "UIActivityIndicatorView"]
+- !private ["So21UIAppearanceContainerP", "UIBarButtonItem"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "navigationItem"]
+- !private ["So21UIAppearanceContainerP", "startAnimating"]
+- !private ["So15UIBarButtonItemC", "init"]
+- !private ["So9UIBarItemC", "init"]
+- !private ["So18UIContentContainerP", "UIActivityIndicatorView"]
+- !private ["So18UIContentContainerP", "UIBarButtonItem"]
+- !private ["So18UIContentContainerP", "navigationItem"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "startAnimating"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "startAnimating"]
+- !private ["So18UIFocusEnvironmentP", "UIActivityIndicatorView"]
+- !private ["So18UIFocusEnvironmentP", "UIBarButtonItem"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "navigationItem"]
+- !private ["So18UIFocusEnvironmentP", "startAnimating"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "startAnimating"]
+- !private ["So16UINavigationItemC", "rightBarButtonItem"]
+- !private ["So16UINavigationItemC", "setRightBarButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIActivityIndicatorView"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIBarButtonItem"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
+- !private ["So30UIPasteConfigurationSupportingP", "startAnimating"]
+- !private ["So11UIResponderC", "UIActivityIndicatorView"]
+- !private ["So11UIResponderC", "UIBarButtonItem"]
+- ["So11UIResponderC", "hideLoadingView"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "navigationItem"]
+- ["So11UIResponderC", "showLoadingView"]
+- !private ["So11UIResponderC", "startAnimating"]
+- !private ["So30UIResponderStandardEditActionsP", "UIActivityIndicatorView"]
+- !private ["So30UIResponderStandardEditActionsP", "UIBarButtonItem"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
+- !private ["So30UIResponderStandardEditActionsP", "startAnimating"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So16UIStateRestoringP", "UIActivityIndicatorView"]
+- !private ["So16UIStateRestoringP", "UIBarButtonItem"]
+- !private ["So16UIStateRestoringP", "navigationItem"]
+- !private ["So18UITraitEnvironmentP", "UIActivityIndicatorView"]
+- !private ["So18UITraitEnvironmentP", "UIBarButtonItem"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "navigationItem"]
+- !private ["So18UITraitEnvironmentP", "startAnimating"]
+- !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "startAnimating"]
+- !private ["So16UIViewControllerC", "UIActivityIndicatorView"]
+- !private ["So16UIViewControllerC", "UIBarButtonItem"]
+- ["So16UIViewControllerC", "hideLoadingView"]
+- !private ["So16UIViewControllerC", "navigationItem"]
+- ["So16UIViewControllerC", "showLoadingView"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "startAnimating"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIActivityIndicatorView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rightBarButtonItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setRightBarButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "startAnimating"]
+depends-nominal:
+- !private "So15CALayerDelegateP"
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9EquatableP"
+- !private "s8HashableP"
+- !private "So8NSCodingP"
+- !private "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "s16RawRepresentableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So23UIActivityIndicatorViewC"
+- !private "SC28UIActivityIndicatorViewStyleO"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So15UIBarButtonItemC"
+- !private "So9UIBarItemC"
+- !private "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So16UINavigationItemC"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- !private "So16UIStateRestoringP"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "70d9dea8dc7c8a02b22bb8f926a51a99"

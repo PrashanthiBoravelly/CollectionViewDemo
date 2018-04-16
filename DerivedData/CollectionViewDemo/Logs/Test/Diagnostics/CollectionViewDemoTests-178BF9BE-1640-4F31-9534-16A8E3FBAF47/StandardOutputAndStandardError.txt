@@ -1,0 +1,27 @@
+2018-04-16 16:45:35.140474+1000 CollectionViewDemo[31283:2425035] Simulator user has requested new graphics quality: 10
+2018-04-16 16:45:35.170532+1000 CollectionViewDemo[31283:2425035] [LayoutConstraints] Unable to simultaneously satisfy constraints.
+	Probably at least one of the constraints in the following list is one you don't want. 
+	Try this: 
+		(1) look at each constraint and try to figure out which you don't expect; 
+		(2) find the code that added the unwanted constraint or constraints and fix it. 
+(
+    "<NSLayoutConstraint:0x608000096c10 UILabel:0x7fbe60215980'Facts'.top >= UILayoutGuide:0x6080001b8560'TitleView(0x7fbe6020aca0)'.top   (active)>",
+    "<NSLayoutConstraint:0x608000096580 UILabel:0x7fbe60215980'Facts'.firstBaseline == UILayoutGuide:0x6080001b8560'TitleView(0x7fbe6020aca0)'.top + 28   (active)>"
+)
+
+Will attempt to recover by breaking constraint 
+<NSLayoutConstraint:0x608000096c10 UILabel:0x7fbe60215980'Facts'.top >= UILayoutGuide:0x6080001b8560'TitleView(0x7fbe6020aca0)'.top   (active)>
+
+Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger.
+The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in <UIKit/UIView.h> may also be helpful.
+Test Suite 'Selected tests' started at 2018-04-16 16:45:35.280
+Test Suite 'CollectionViewDemoTests.xctest' started at 2018-04-16 16:45:35.281
+Test Suite 'NetworkManagerTests' started at 2018-04-16 16:45:35.282
+Test Case '-[CollectionViewDemoTests.NetworkManagerTests testFetchingFacts]' started.
+Test Case '-[CollectionViewDemoTests.NetworkManagerTests testFetchingFacts]' passed (0.555 seconds).
+Test Suite 'NetworkManagerTests' passed at 2018-04-16 16:45:35.838.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.555 (0.556) seconds
+Test Suite 'CollectionViewDemoTests.xctest' passed at 2018-04-16 16:45:35.838.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.555 (0.557) seconds
+Test Suite 'Selected tests' passed at 2018-04-16 16:45:35.839.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.555 (0.559) seconds

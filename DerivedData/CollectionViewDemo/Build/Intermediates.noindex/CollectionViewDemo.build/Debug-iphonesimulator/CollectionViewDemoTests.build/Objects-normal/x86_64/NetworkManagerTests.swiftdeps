@@ -1,0 +1,284 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NetworkManagerTests"
+provides-nominal:
+- "23CollectionViewDemoTests014NetworkManagerD0C"
+provides-member:
+- ["23CollectionViewDemoTests014NetworkManagerD0C", ""]
+provides-dynamic-lookup:
+- "setUp"
+- "tearDown"
+- "testFetchingAndDecodingFacts"
+- "testFetchingFacts"
+- "testInValidURL"
+depends-top-level:
+- !private "Array"
+- !private "AssignmentPrecedence"
+- !private "CustomError"
+- !private "Data"
+- !private "Fact"
+- !private "NetworkManager"
+- "NetworkManagerTests"
+- !private "Result"
+- !private "StringLiteralType"
+- !private "XCTAssertNil"
+- !private "XCTAssertNotNil"
+- "XCTestCase"
+- !private "XCTestExpectation"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s7CVarArgP", "NetworkManager"]
+- !private ["s7CVarArgP", "XCTAssertNil"]
+- !private ["s7CVarArgP", "XCTAssertNotNil"]
+- !private ["s7CVarArgP", "XCTestExpectation"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "fulfill"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "setUp"]
+- !private ["s7CVarArgP", "tearDown"]
+- !private ["s7CVarArgP", "wait"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "NetworkManager"]
+- !private ["s28CustomDebugStringConvertibleP", "XCTAssertNil"]
+- !private ["s28CustomDebugStringConvertibleP", "XCTAssertNotNil"]
+- !private ["s28CustomDebugStringConvertibleP", "XCTestExpectation"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "fulfill"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "setUp"]
+- !private ["s28CustomDebugStringConvertibleP", "tearDown"]
+- !private ["s28CustomDebugStringConvertibleP", "wait"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "NetworkManager"]
+- !private ["s23CustomStringConvertibleP", "XCTAssertNil"]
+- !private ["s23CustomStringConvertibleP", "XCTAssertNotNil"]
+- !private ["s23CustomStringConvertibleP", "XCTestExpectation"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "fulfill"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "setUp"]
+- !private ["s23CustomStringConvertibleP", "tearDown"]
+- !private ["s23CustomStringConvertibleP", "wait"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "NetworkManager"]
+- !private ["s9EquatableP", "XCTAssertNil"]
+- !private ["s9EquatableP", "XCTAssertNotNil"]
+- !private ["s9EquatableP", "XCTestExpectation"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "fulfill"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "setUp"]
+- !private ["s9EquatableP", "tearDown"]
+- !private ["s9EquatableP", "wait"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "NetworkManager"]
+- !private ["s8HashableP", "XCTAssertNil"]
+- !private ["s8HashableP", "XCTAssertNotNil"]
+- !private ["s8HashableP", "XCTestExpectation"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "fulfill"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "setUp"]
+- !private ["s8HashableP", "tearDown"]
+- !private ["s8HashableP", "wait"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSObjectC", "CustomError"]
+- !private ["So8NSObjectC", "Data"]
+- !private ["So8NSObjectC", "Fact"]
+- !private ["So8NSObjectC", "NetworkManager"]
+- !private ["So8NSObjectC", "Result"]
+- !private ["So8NSObjectC", "XCTAssertNil"]
+- !private ["So8NSObjectC", "XCTAssertNotNil"]
+- !private ["So8NSObjectC", "XCTestExpectation"]
+- !private ["So8NSObjectC", "fulfill"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "setUp"]
+- ["So8NSObjectC", "tearDown"]
+- ["So8NSObjectC", "testFetchingAndDecodingFacts"]
+- ["So8NSObjectC", "testFetchingFacts"]
+- ["So8NSObjectC", "testInValidURL"]
+- !private ["So8NSObjectC", "wait"]
+- !private ["So16NSObjectProtocolP", "NetworkManager"]
+- !private ["So16NSObjectProtocolP", "XCTAssertNil"]
+- !private ["So16NSObjectProtocolP", "XCTAssertNotNil"]
+- !private ["So16NSObjectProtocolP", "XCTestExpectation"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "fulfill"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "setUp"]
+- !private ["So16NSObjectProtocolP", "tearDown"]
+- !private ["So16NSObjectProtocolP", "wait"]
+- !private ["18CollectionViewDemo14NetworkManagerC", "responseData"]
+- !private ["18CollectionViewDemo14NetworkManagerC", "responseObject"]
+- !private ["23CollectionViewDemoTests014NetworkManagerD0C", "CustomError"]
+- !private ["23CollectionViewDemoTests014NetworkManagerD0C", "Data"]
+- !private ["23CollectionViewDemoTests014NetworkManagerD0C", "Fact"]
+- !private ["23CollectionViewDemoTests014NetworkManagerD0C", "NetworkManager"]
+- !private ["23CollectionViewDemoTests014NetworkManagerD0C", "Result"]
+- !private ["23CollectionViewDemoTests014NetworkManagerD0C", "XCTAssertNil"]
+- !private ["23CollectionViewDemoTests014NetworkManagerD0C", "XCTAssertNotNil"]
+- !private ["23CollectionViewDemoTests014NetworkManagerD0C", "XCTestExpectation"]
+- ["23CollectionViewDemoTests014NetworkManagerD0C", "deinit"]
+- ["23CollectionViewDemoTests014NetworkManagerD0C", "init"]
+- ["23CollectionViewDemoTests014NetworkManagerD0C", "setUp"]
+- ["23CollectionViewDemoTests014NetworkManagerD0C", "tearDown"]
+- ["23CollectionViewDemoTests014NetworkManagerD0C", "testFetchingAndDecodingFacts"]
+- ["23CollectionViewDemoTests014NetworkManagerD0C", "testFetchingFacts"]
+- ["23CollectionViewDemoTests014NetworkManagerD0C", "testInValidURL"]
+- !private ["23CollectionViewDemoTests014NetworkManagerD0C", "wait"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["18CollectionViewDemo6ResultO", "failure"]
+- !private ["18CollectionViewDemo6ResultO", "success"]
+- !private ["s8SequenceP", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So11XCTActivityP", "NetworkManager"]
+- !private ["So11XCTActivityP", "XCTAssertNil"]
+- !private ["So11XCTActivityP", "XCTAssertNotNil"]
+- !private ["So11XCTActivityP", "XCTestExpectation"]
+- ["So11XCTActivityP", ""]
+- !private ["So11XCTActivityP", "init"]
+- !private ["So11XCTActivityP", "setUp"]
+- !private ["So11XCTActivityP", "tearDown"]
+- !private ["So11XCTActivityP", "wait"]
+- !private ["So17XCTWaiterDelegateP", "NetworkManager"]
+- !private ["So17XCTWaiterDelegateP", "XCTAssertNil"]
+- !private ["So17XCTWaiterDelegateP", "XCTAssertNotNil"]
+- !private ["So17XCTWaiterDelegateP", "XCTestExpectation"]
+- ["So17XCTWaiterDelegateP", ""]
+- !private ["So17XCTWaiterDelegateP", "init"]
+- !private ["So17XCTWaiterDelegateP", "setUp"]
+- !private ["So17XCTWaiterDelegateP", "tearDown"]
+- !private ["So17XCTWaiterDelegateP", "wait"]
+- !private ["So6XCTestC", "CustomError"]
+- !private ["So6XCTestC", "Data"]
+- !private ["So6XCTestC", "Fact"]
+- !private ["So6XCTestC", "NetworkManager"]
+- !private ["So6XCTestC", "Result"]
+- !private ["So6XCTestC", "XCTAssertNil"]
+- !private ["So6XCTestC", "XCTAssertNotNil"]
+- !private ["So6XCTestC", "XCTestExpectation"]
+- ["So6XCTestC", "init"]
+- ["So6XCTestC", "setUp"]
+- ["So6XCTestC", "tearDown"]
+- ["So6XCTestC", "testFetchingAndDecodingFacts"]
+- ["So6XCTestC", "testFetchingFacts"]
+- ["So6XCTestC", "testInValidURL"]
+- !private ["So6XCTestC", "wait"]
+- !private ["So10XCTestCaseC", "CustomError"]
+- !private ["So10XCTestCaseC", "Data"]
+- !private ["So10XCTestCaseC", "Fact"]
+- !private ["So10XCTestCaseC", "NetworkManager"]
+- !private ["So10XCTestCaseC", "Result"]
+- !private ["So10XCTestCaseC", "XCTAssertNil"]
+- !private ["So10XCTestCaseC", "XCTAssertNotNil"]
+- !private ["So10XCTestCaseC", "XCTestExpectation"]
+- ["So10XCTestCaseC", ""]
+- ["So10XCTestCaseC", "init"]
+- ["So10XCTestCaseC", "setUp"]
+- ["So10XCTestCaseC", "tearDown"]
+- ["So10XCTestCaseC", "testFetchingAndDecodingFacts"]
+- ["So10XCTestCaseC", "testFetchingFacts"]
+- ["So10XCTestCaseC", "testInValidURL"]
+- !private ["So10XCTestCaseC", "wait"]
+- !private ["So17XCTestExpectationC", "fulfill"]
+- !private ["So17XCTestExpectationC", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NetworkManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "XCTAssertNil"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "XCTAssertNotNil"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "XCTestExpectation"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fulfill"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setUp"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tearDown"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "wait"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "18CollectionViewDemo14NetworkManagerC"
+- "23CollectionViewDemoTests014NetworkManagerD0C"
+- !private "s26RangeReplaceableCollectionP"
+- !private "18CollectionViewDemo6ResultO"
+- !private "s8SequenceP"
+- !private "s12StaticStringV"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So11XCTActivityP"
+- "So17XCTWaiterDelegateP"
+- "So6XCTestC"
+- "So10XCTestCaseC"
+- !private "So17XCTestExpectationC"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/prashanthiboravelly/Desktop/CollectionViewDemo/DerivedData/CollectionViewDemo/Build/Products/Debug-iphonesimulator/CollectionViewDemo.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/XCTest.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "a2c40d1a2219a6f9d995e2d4a7bba95f"

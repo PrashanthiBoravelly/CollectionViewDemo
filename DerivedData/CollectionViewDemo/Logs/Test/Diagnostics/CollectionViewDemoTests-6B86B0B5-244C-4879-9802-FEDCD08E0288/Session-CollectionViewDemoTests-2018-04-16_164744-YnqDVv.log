@@ -1,0 +1,8 @@
+16:47:44.506 Xcode[81948:1655323] Beginning test session CollectionViewDemoTests-A20E0C44-787B-4549-A855-93AA4F0BC3FA at 2018-04-16 16:47:44.506 with Xcode 9E145 on target <DVTiPhoneSimulator: 0x7fb6425b7080> {
+		SimDevice: iPad Air 2 (6095C4B7-305E-47B3-904E-20C1148565C3, iOS 11.3, Booted)
+} (11.3 (15E217))
+16:47:44.506 Xcode[81948:1655323] Launching with Xcode.DebuggerFoundation.Launcher.LLDB
+16:47:44.506 Xcode[81948:1655323] Test standard output and standard error is at /var/folders/hz/0z9vmp3s7nlcgvjz812nby0r0000gn/T/com.apple.dt.XCTest/IDETestRunSession-024BA5D2-AA34-408B-91D1-C6D4B33B571B/CollectionViewDemoTests-6B86B0B5-244C-4879-9802-FEDCD08E0288/StandardOutputAndStandardError.txt
+16:47:44.507 Xcode[81948:1655323] Simulator 6095C4B7-305E-47B3-904E-20C1148565C3 was claimed by TestSessionClaim_IDETestRunSession-024BA5D2-AA34-408B-91D1-C6D4B33B571B
+16:47:44.756 Xcode[81948:1655323] Test operation failure: Test operation was canceled.
+16:47:44.756 Xcode[81948:1655323] _finishWithError:Error Domain=IDETestOperationsObserverErrorDomain Code=14 "Test operation was canceled." UserInfo={NSLocalizedDescription=Test operation was canceled.}

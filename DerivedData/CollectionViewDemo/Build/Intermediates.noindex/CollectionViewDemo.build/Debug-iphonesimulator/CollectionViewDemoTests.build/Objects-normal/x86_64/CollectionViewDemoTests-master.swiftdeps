@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "2a2add8c1d2497134576daef50fe0fe7"
+build_time: [1523864758, 460773000]
+inputs:
+  "/Users/prashanthiboravelly/Desktop/CollectionViewDemo/CollectionViewDemoTests/NetworkManagerTests.swift": [1523861751, 0]
+  "/Users/prashanthiboravelly/Desktop/CollectionViewDemo/CollectionViewDemoTests/FactTests.swift": [1523864756, 0]

@@ -1,0 +1,29 @@
+2018-04-16 16:37:41.674930+1000 CollectionViewDemo[30759:2408950] Simulator user has requested new graphics quality: 10
+2018-04-16 16:37:41.707934+1000 CollectionViewDemo[30759:2408950] [LayoutConstraints] Unable to simultaneously satisfy constraints.
+	Probably at least one of the constraints in the following list is one you don't want. 
+	Try this: 
+		(1) look at each constraint and try to figure out which you don't expect; 
+		(2) find the code that added the unwanted constraint or constraints and fix it. 
+(
+    "<NSLayoutConstraint:0x608000099cd0 UILabel:0x7ffe6d517420'Facts'.top >= UILayoutGuide:0x6080001ab360'TitleView(0x7ffe6d50d1c0)'.top   (active)>",
+    "<NSLayoutConstraint:0x6080000996e0 UILabel:0x7ffe6d517420'Facts'.firstBaseline == UILayoutGuide:0x6080001ab360'TitleView(0x7ffe6d50d1c0)'.top + 28   (active)>"
+)
+
+Will attempt to recover by breaking constraint 
+<NSLayoutConstraint:0x608000099cd0 UILabel:0x7ffe6d517420'Facts'.top >= UILayoutGuide:0x6080001ab360'TitleView(0x7ffe6d50d1c0)'.top   (active)>
+
+Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger.
+The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in <UIKit/UIView.h> may also be helpful.
+Test Suite 'Selected tests' started at 2018-04-16 16:37:41.994
+Test Suite 'CollectionViewDemoTests.xctest' started at 2018-04-16 16:37:41.995
+Test Suite 'NetworkManagerTests' started at 2018-04-16 16:37:41.995
+Test Case '-[CollectionViewDemoTests.NetworkManagerTests testInValidURL]' started.
+2018-04-16 16:37:41.997356+1000 CollectionViewDemo[30759:2409096] Task <EB0DBE22-5A56-4883-8973-6FF1F0636299>.<2> finished with error - code: -1002
+/Users/prashanthiboravelly/Desktop/CollectionViewDemo/CollectionViewDemoTests/NetworkManagerTests.swift:30: error: -[CollectionViewDemoTests.NetworkManagerTests testInValidURL] : XCTAssertNotNil failed - 
+Test Case '-[CollectionViewDemoTests.NetworkManagerTests testInValidURL]' failed (0.008 seconds).
+Test Suite 'NetworkManagerTests' failed at 2018-04-16 16:37:42.005.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.008 (0.009) seconds
+Test Suite 'CollectionViewDemoTests.xctest' failed at 2018-04-16 16:37:42.007.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.008 (0.013) seconds
+Test Suite 'Selected tests' failed at 2018-04-16 16:37:42.009.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.008 (0.016) seconds
