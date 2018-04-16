@@ -16,7 +16,7 @@ class FactsManager: NetworkManager {
     }
 
     static func fetchFacts(completion: @escaping (Result<Fact, CustomError>) -> Void) {
-        NetworkManager.responseObject(urlString: Constants.factsURL,
+        responseObject(urlString: Constants.factsURL,
                                       completion: completion)
     }
 }

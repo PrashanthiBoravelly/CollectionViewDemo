@@ -14,7 +14,7 @@ struct Fact: Decodable {
     struct Row: Decodable {
         let title: String?
         let description: String?
-        let imageURL: URL?
+        let imageURL: String?
         
         enum CodingKeys: String, CodingKey {
             case title

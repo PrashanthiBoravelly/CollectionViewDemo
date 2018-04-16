@@ -8,32 +8,32 @@
 
 import Foundation
 
-class NetworkCache {
+class NetworkCache: NetworkManager {
     
-    var values: [URL: Data] = [:]
+    var values: [String: Data] = [:]
     
     enum CodingKeys: String, CodingKey {
         case values
     }
     
-    func add(url: URL, completion: ((Result<Data, CustomError>) -> Void)? = nil) {
-        if let value = values[url] {
+    func add(urlString: String, completion: ((Result<Data, CustomError>) -> Void)? = nil) {
+        if let value = values[urlString] {
             completion?(.success(value))
         } else {
-            URLSession.shared.dataTask(with: URLRequest(url: url), completionHandler: { [weak self]  (data, _, error) in
-                guard let strongSelf = self else { return }
-                switch (data, error) {
-                case(_, let error?):
-                    let error = CustomError.system(error: error)
-                    completion?(.failure(error))
-                case(let data?, nil):
-                    strongSelf.values[url] = data
-                    completion?(.success(data))
-                default:
-                    let error = CustomError.unknown
-                    completion?(.failure(error))
+            NetworkCache.responseData(urlString: urlString) { result in
+                DispatchQueue.main.async { [weak self] in
+                    guard let strongSelf = self else { return }
+                    switch result {
+                    case .success(let data):
+                        strongSelf.values[urlString] = data
+                        completion?(.success(data))
+                    case .failure(let error):
+                        completion?(.failure(error))
+                        
+                    }
                 }
-            }).resume()
+            }
         }
     }
+    
 }

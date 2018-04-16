@@ -73,7 +73,7 @@ class FactsViewController: UICollectionViewController, UICollectionViewDelegateF
             
             // fecthing image from server.
             cell.imageView.setImage(cache: networkImageCache,
-                                    imageURL: imageURL,
+                                    imageURLString: imageURL,
                                     completion: { result in
                                         DispatchQueue.main.async { [weak self] in
                                             guard self != nil else { return }

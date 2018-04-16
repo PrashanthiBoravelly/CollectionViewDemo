@@ -13,10 +13,11 @@ enum Result<T, E: Error> {
     case failure(E)
 }
 
-class NetworkManager {
-    
-    class func responseData(urlString: String,
-                            completion: @escaping (Result<Data, CustomError>) -> Void) {
+protocol NetworkManager { }
+
+extension NetworkManager {
+    static func responseData(urlString: String,
+                             completion: @escaping (Result<Data, CustomError>) -> Void) {
         if let baseUrl = URL(string: urlString) {
             let request = URLRequest(url: baseUrl)
             
@@ -45,8 +46,8 @@ class NetworkManager {
         }
     }
     
-    class func responseObject<T: Decodable>(urlString: String,
-                                            completion: @escaping (Result<T, CustomError>) -> Void) {
+    static func responseObject<T: Decodable>(urlString: String,
+                                             completion: @escaping (Result<T, CustomError>) -> Void) {
         
         // T is any type which can be decodable to convert the response from backend.
         responseData(urlString: urlString,
@@ -74,5 +75,4 @@ class NetworkManager {
                         }
         })
     }
-    
 }
